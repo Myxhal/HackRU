@@ -11,31 +11,6 @@ public class courseInitializer {
 
     public static List<courses> initializeAvailableCourses(String allCoursesPath, String takenCoursesPath) {
         Map<String, courses> allCourses = new HashMap<>();
-        String[] computerScienceKeywords = {
-            "Software Developer", "Web Developer", "Mobile Application Developer", "Database Administrator",
-            "Systems Administrator", "Network Engineer", "Data Scientist", "Data Analyst",
-            "Machine Learning Engineer", "AI Research Scientist", "Cybersecurity Analyst", "Information Security Analyst",
-            "Cloud Solutions Architect", "DevOps Engineer", "Systems Analyst", "Business Analyst",
-            "IT Project Manager", "Software Quality Assurance Tester", "User Experience Designer", "User Interface Designer",
-            "Front-End Developer", "Back-End Developer", "Full Stack Developer", "Game Developer",
-            "Embedded Systems Engineer", "Hardware Engineer", "Software Engineer", "Technical Support Specialist",
-            "IT Consultant", "Cloud Engineer", "Data Engineer", "Game Developer",
-            "Blockchain Developer", "CRM Developer", "ERP Developer", "Computer Vision Engineer",
-            "NLP Engineer", "SEO Specialist", "Social Media Manager", "Content Manager",
-            "IT Auditor", "Compliance Analyst", "Systems Engineer", "Network Architect",
-            "Solutions Architect", "Technical Writer", "Product Manager", "Program Manager",
-            "Scrum Master", "Agile Coach", "Research Scientist", "Quantitative Analyst",
-            "Statistical Analyst", "Computer Programmer", "Quality Assurance Engineer", "Security Engineer",
-            "Penetration Tester", "Ethical Hacker", "Digital Forensic Analyst", "Cloud Consultant",
-            "IT Manager", "Chief Information Officer (CIO)", "Chief Technology Officer (CTO)", "Software Architect",
-            "Infrastructure Engineer", "Release Manager", "Data Center Manager", "Database Developer",
-            "E-commerce Analyst", "Network Security Engineer", "Cybersecurity", "Application Support Analyst",
-            "Application Developer", "IT Operations Manager", "Data Privacy Officer", "UX Researcher",
-            "Voice User Interface Designer", "Mobile UX Designer", "IoT Developer", "Augmented Reality Developer",
-            "Virtual Reality Developer", "Site Reliability Engineer", "DevSecOps Engineer", "AI Architect",
-            "Machine Learning Architect", "Data Governance Analyst", "Cloud Security Architect", "IT Procurement Specialist",
-            "IT Service Manager", "Network Operations Center Engineer", "SAP Consultant", "Salesforce Developer",
-            "Technical Sales Engineer", "Pre-sales Engineer", "Post-sales Engineer", "Technical Account Manager"}
         
 
 
@@ -147,5 +122,25 @@ public class courseInitializer {
 
         return recommendedCourses;
     }
+
+        public static String[][] readCSVToArray(String filePath) throws IOException {
+            List<String[]> lines = new ArrayList<>();
+            
+            // Open the file for reading
+            try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+                String line;
+                
+                // Read the file line by line
+                while ((line = br.readLine()) != null) {
+                    // Split each line into parts using the comma as a separator
+                    String[] parts = line.split(",");
+                    lines.add(parts);
+                }
+            }
+            
+            // Convert the list of String[] to a 2D array
+            String[][] array = new String[lines.size()][];
+            return lines.toArray(array);
+        }
 }
 
