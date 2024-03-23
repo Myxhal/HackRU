@@ -15,7 +15,7 @@ USER INPUT
 
 
 BACKEND
-- get csv list of all courses 
+- get csv list of all courses(descriptions, credits)
 - create an object intiliazer (boolean taken = false) and method that puts each element of the csv 
 list througb it the object intiliazer and 2darray (maybe arrayList)
 - getter methods
