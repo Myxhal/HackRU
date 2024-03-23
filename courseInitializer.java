@@ -12,6 +12,7 @@ public class courseInitializer {
     public static List<courses> initializeAvailableCourses(String allCoursesPath, String takenCoursesPath) {
         Map<String, courses> allCourses = new HashMap<>();
 
+<<<<<<< Updated upstream
         String[] computerScienceKeywords = {
             "Software Developer", "Web Developer", "Mobile Application Developer", "Database Administrator",
             "Systems Administrator", "Network Engineer", "Data Scientist", "Data Analyst",
@@ -41,6 +42,9 @@ public class courseInitializer {
         
 
         // Load all courses
+=======
+        //Load all courses
+>>>>>>> Stashed changes
         try (BufferedReader br = new BufferedReader(new FileReader(allCoursesPath))) {
             String line;
             br.readLine(); // Skip header line
