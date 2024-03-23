@@ -1,3 +1,12 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 public class courseInitializer {
     public static List<courses> initializeAvailableCourses(String allCoursesPath, String takenCoursesPath) {
         Map<String, courses> allCourses = new HashMap<>();
@@ -9,7 +18,7 @@ public class courseInitializer {
             while ((line = br.readLine()) != null) {
                 String[] values = line.split(",");
                 List<String> subjects = Arrays.asList(values[1].split(";"));
-                Course course = new courses(values[0], subjects, values[2], values[3], Integer.parseInt(values[4]));
+                courses course = new courses(values[0], subjects, values[2], values[3], Integer.parseInt(values[4]));
                 allCourses.put(course.getCourseId(), course);
             }
         } catch (IOException e) {
