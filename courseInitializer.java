@@ -48,7 +48,7 @@ public class courseInitializer {
             while ((line = br.readLine()) != null) {
                 String[] values = line.split(",");
                 List<String> subjects = Arrays.asList(values[1].split(";"));
-                courses course = new courses(values[0], subjects, values[1], values[2], Integer.parseInt(values[3]));
+                courses course = new courses(values[0], subjects, values[1], values[2], Double.parseDouble(values[3]));
                 allCourses.put(course.getCourseId(), course);
             }
         } catch (IOException e) {
