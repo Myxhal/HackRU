@@ -25,5 +25,11 @@ public class courses{
 
     public double getCredits() { return credits; }
     public void setCredits(double credits) { this.credits = credits; }
+    public static void main(String args[]){
+        
+    
+    }
 }
+
+
 
