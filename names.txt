@@ -6,6 +6,7 @@ David Agudelo
 Plan of Attack: (Comp Sci Majors)
 USER INPUT
 - user will open interface and be asked which of the different jobs interest them
+- ba or bs option
 - check all that interest them 
 - upload picture of their transcript
 - will upload image to Ai that will output exact course names (variable courseNames)
@@ -18,5 +19,6 @@ BACKEND
 list througb it the object intiliazer and 2darray (maybe arrayList)
 - getter methods
 - courses they have taken will be turned to TRUE and will not be printed out
-- traverse through course list and print our=t courses that they have not taken
+- traverse through course list and print out courses that they have not taken
+- required courses and elective courseNames
 - 
