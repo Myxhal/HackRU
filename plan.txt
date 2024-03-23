@@ -18,7 +18,7 @@ BACKEND
 - get csv list of all courses using course numbers (course #, name, descriptions, credits,)
 - look through descriptions of course and using keywords determine the subjects of the course
 - create an object intiliazer (name, subjects, descriptions, credits, course #, boolean taken = false) and method that puts each element of the csv 
-list througb it the object intiliazer and 2darray (maybe arrayList)
+list through it the object intiliazer and 2darray (maybe arrayList)
 - getter methods
 - courses they have taken will be turned to TRUE and will not be printed out
 - traverse through course list and print out courses that they have not taken
