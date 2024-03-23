@@ -1,30 +1,40 @@
-//Code for the process of turning data into course objects that the AI can access
- 
+import java.util.Arrays;
+import java.util.List;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
-import java.util.Arrays;
+
+public class CourseInitializer {
+    public static List<Course> initializeCoursesFromTranscript(String filePath) {
+        
+        Map<String, Course> courseMap = new HashMap<>();
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            String line;
+            br.readLine(); // Skip header line
+            while ((line = br.readLine()) != null) {
+                String[] values = line.split(",");
+                List<String> subjects = Arrays.asList(values[1].split(";"));
+                Course course = new Course(values[0], subjects, values[2], values[3], Double.parseDouble(values[4]));
+                courseMap.putIfAbsent(course.getCourseId(), course); // Prevent duplicates based on courseID
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return new ArrayList<>(courseMap.values());
+    }
+}
 
 public class Course {
     private String courseId;
     private List<String> subjects;
     private String courseName;
-
     private String description;
     private double numberOfCredits;
 
-    public Course(String courseId, List<String> subjects, String courseName, String description, int numberOfCredits) {
-
-    private double credits;
-    private String descript;
-    private String[] subjects = {""};
-
-    public courses(String courseId, String[] subjects, String courseName, String descript, double credits) {
-
+    public Course(String courseId, List<String> subjects, String courseName, String description, double numberOfCredits) {
         this.courseId = courseId;
         this.subjects = subjects;
         this.courseName = courseName;
@@ -42,50 +52,14 @@ public class Course {
     public String getCourseName() { return courseName; }
     public void setCourseName(String courseName) { this.courseName = courseName; }
 
-
-    public double getCredits() { return credits; }
-    public void setCredits(double credits) { this.credits = credits; }
-    public static void main(String args[]){
-        
-    
-    }
-}
-
-
-
     public String getDescription() { return description; }
     public void setDescription(String description) { this.description = description; }
 
-    public int getNumberOfCredits() { return numberOfCredits; }
-    public void setNumberOfCredits(int numberOfCredits) { this.numberOfCredits = numberOfCredits; }
+    public double getNumberOfCredits() { return numberOfCredits; }
+    public void setNumberOfCredits(double numberOfCredits) { this.numberOfCredits = numberOfCredits; }
 }
 
-
-public class CourseInitializer {
-
-    public static List<Course> initializeCoursesFromTranscript(String filePath) {
-
-        Map<String, Course> courseMap = new HashMap<>();
-
-        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
-            String line;
-            br.readLine(); // Skip header line
-
-            while ((line = br.readLine()) != null) {
-                String[] values = line.split(",");
-                List<String> subjects = Arrays.asList(values[1].split(";"));
-                Course course = new Course(values[0], subjects, values[2], values[3], Integer.parseInt(values[4]));
-                courseMap.putIfAbsent(course.getCourseId(), course); // Prevent duplicates based on courseID
-            }
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return new ArrayList<>(courseMap.values());
-    }
-}
-
-
+public class Main {
     public static void main(String[] args) {
         String filePath = "path/to/your/courses.csv";
         List<Course> courses = CourseInitializer.initializeCoursesFromTranscript(filePath);
@@ -95,5 +69,5 @@ public class CourseInitializer {
             System.out.println(course.getCourseName() + " (" + course.getNumberOfCredits() + " credits): " + course.getDescription());
         }
     }
-
+}
 
