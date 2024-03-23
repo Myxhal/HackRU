@@ -21,4 +21,5 @@ list througb it the object intiliazer and 2darray (maybe arrayList)
 - courses they have taken will be turned to TRUE and will not be printed out
 - traverse through course list and print out courses that they have not taken
 - required courses and elective courseNames
-- 
+- traverse through courses check if subjects match, if match check if taken. 
+- Check if required or elective and split into two lists and print out
