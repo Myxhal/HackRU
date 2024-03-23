@@ -4,11 +4,11 @@
 public class courses{
     private String courseId;
     private String courseName;
-    private int credits;
+    private double credits;
     private String descript;
     private String[] subjects = {""};
 
-    public courses(String courseId, String[] subjects, String courseName, String descript, int credits) {
+    public courses(String courseId, String[] subjects, String courseName, String descript, double credits) {
         this.courseId = courseId;
         this.courseName = courseName;
         this.credits = credits;
@@ -23,7 +23,7 @@ public class courses{
     public String getCourseName() { return courseName; }
     public void setCourseName(String courseName) { this.courseName = courseName; }
 
-    public int getCredits() { return credits; }
-    public void setCredits(int credits) { this.credits = credits; }
+    public double getCredits() { return credits; }
+    public void setCredits(double credits) { this.credits = credits; }
 }
 
