@@ -17,7 +17,7 @@ public class coursebot{
         frame.add(panel2);
         frame.add(panel1);
         frame.setSize(1020,600);
-        frame.show();
+        frame.setVisible(true);
     }
 
 }
