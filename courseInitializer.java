@@ -10,7 +10,7 @@ import java.util.Map;
 public class courseInitializer {
 
     public static List<courses> initializeAvailableCourses(String allCoursesPath, String takenCoursesPath) {
-<<<<<<< Updated upstream
+
         Map<String, courses> allCourses = new HashMap<>();
         String[] computerScienceKeywords = {
             "Software Developer", "Web Developer", "Mobile Application Developer", "Database Administrator",
@@ -37,11 +37,8 @@ public class courseInitializer {
             "Machine Learning Architect", "Data Governance Analyst", "Cloud Security Architect", "IT Procurement Specialist",
             "IT Service Manager", "Network Operations Center Engineer", "SAP Consultant", "Salesforce Developer",
             "Technical Sales Engineer", "Pre-sales Engineer", "Post-sales Engineer", "Technical Account Manager"
-        };
-        
-=======
-        Map<String, courses> allCourses = new HashMap<>();    
->>>>>>> Stashed changes
+        };   
+
 
         // Load all courses
         //Load all courses
