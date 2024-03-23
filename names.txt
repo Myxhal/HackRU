@@ -2,3 +2,10 @@ Mychal Ortega
 Brian Castillo
 James Machado
 David Agudelo
+
+Plan of Attack:
+- user will open interface and be asked which of the different jobs interest them
+- check all that interest them 
+- upload picture of their transcript
+- 
+- 
