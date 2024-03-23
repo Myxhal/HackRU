@@ -1,3 +1,7 @@
 Mychal Ortega
 Brian Castillo
+<<<<<<< Updated upstream
 James Machado
+=======
+David Agudelo
+>>>>>>> Stashed changes
