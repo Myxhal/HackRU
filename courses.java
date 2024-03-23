@@ -1,15 +1,19 @@
 //Code for the process of turning data into course objects that the AI can access
  
 
-public class Course {
+public class courses{
     private String courseId;
     private String courseName;
     private int credits;
+    private String descript;
+    private String[] subjects = {""};
 
-    public Course(String courseId, String courseName, int credits) {
+    public courses(String courseId, String[] subjects, String courseName, String descript, int credits) {
         this.courseId = courseId;
         this.courseName = courseName;
         this.credits = credits;
+        this.descript = descript;
+        this.subjects = subjects;
     }
 
     // Getters and setters
