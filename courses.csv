@@ -105,9 +105,27 @@
 16:198:553, Design of Internet Services, Design of Internet Services covers the design and implementation of internet-based services and applications, 4.0
 16:198:554, Capstone Project I, Capstone Project I is the first part of a two-semester project where students apply their knowledge to solve a significant computer science problem, 3.0
 16:198:555, Capstone Project II, Capstone Project II is the second part of a two-semester project where students apply their knowledge to solve a significant computer science problem, 3.0 
+01:750:203, General Physics I, Elementary but detailed analysis of fundamental topics; motion; gravitation; momentum; energy; electromagnetism; waves; heat; kinetic theory; quantum effects; atomic and nuclear structure, 3.0
+01:750:204, General Physics II,  Elementary but detailed analysis of fundamental topics; motion; gravitation; momentum; energy; electromagnetism; waves; heat; kinetic theory; quantum effects; atomic and nuclear structure, 3.0
+01:750:205, General Physics Lab, Laboratory to complement 01:750:203-204, 1.0
+01:750:206, General Physics Lab II, Laboratory to complement 01:750:203-204, 1.0
+01:750:123, Anal Physics I, Analytic Physics 1 is the study of fundamental principles and mathematical frameworks governing motion; forces; energy; and properties of matter, 4.0
+01:750:124, Anal Physics I Lab, Lab to complement 01:750:123, 1.0
 
-
-
-
-
-
+01:750:227, Anal Physics IIA, Analytic Physics 2 explores advanced concepts in classical mechanics electromagnetism and thermodynamics., 3.0
+01:750:229, General Physics II Lab, Laboratory to complement 01:750:2227, 1.0
+01:750:271, Honors Physics I, Relativity wave and quantum properties of photons and electrons the structure of atoms molecules and solids nuclear physics elementary particles, 3.0
+01:750:272, Honors Physics II,Relativity wave and quantum properties of photons and electrons the structure of atoms molecules and solids nuclear physics elementary particles, 3.0
+01:750:275, Classical Physics Laboratory, Labratory to complement 01:750:275, 1.0
+01:750:276, Classical Physics Laboratory, Labratory to complement 01:750:276, 1.0 
+01:750:201, Extended General Physics, Elementary but detailed analysis of fundamental topics, 5.0
+01:750:202, Extended General Physics II, Elementary but detailed analysis of fundamental topics, 5.0
+01:750:193, Physics for the Sciences, Introduction to physics with biological ecological and chemical applications Selected topics in mechanics thermodynamics fluids waves electricity magnetism optics and modern physics Integrated laboratory experiments, 4.0
+01:750:194, Physics for the Sciences II, Continuation of introduction to physics with biological ecological and chemical applications Selected topics in mechanics thermodynamics fluids waves electricity magnetism optics and modern physics Integrated laboratory experiments, 4.0
+01:160:159, General Chemistry for Engineers, 
+01:160:160, General Chemistry, For Science Majors. Introduction To Chemical Principles And Their Application. Stoichiometry States Of Matter Atomic And Molecular Structure Solutions Thermodynamics Equilibrium Oxidation-Reduction Kinetics Nonmetals Metals And Coordination Compounds And Nuclear Chemistry., 4.0
+01:160:161, General Chemistry II, For Science Majors. Introduction To Chemical Principles And Their Application. Stoichiometry States Of Matter Atomic And Molecular Structure Solutions Thermodynamics Equilibrium Oxidation-Reduction Kinetics Nonmetals Metals And Coordination Compounds And Nuclear Chemistry., 4.0
+01:160:162, General Chemistry III,For Science Majors. Introduction To Chemical Principles And Their Application. Stoichiometry States Of Matter Atomic And Molecular Structure Solutions Thermodynamics Equilibrium Oxidation-Reduction Kinetics Nonmetals Metals And Coordination Compounds And Nuclear Chemistry., 4.0
+01:160:163, Honors Gen Chem,Honors General Chemistry 1 focuses on fundamental chemical principles including stoichiometry; atomic structure; and thermodynamics., 4.0
+01:160:164, Honors Gen Chem II, Gen Chem 2 delves deeper into topics such as chemical equilibrium; kinetics; and electrochemistry; building upon the concepts introduced in the first course., 4.0
+01:160:171, Gen Chem Lab, Laboratory illustrating basic chemical methods, 1.0
