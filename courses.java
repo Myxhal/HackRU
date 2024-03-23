@@ -13,24 +13,18 @@ public class Course {
     private String courseId;
     private List<String> subjects;
     private String courseName;
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
+
     private String description;
-    private int numberOfCredits;
+    private double numberOfCredits;
 
     public Course(String courseId, List<String> subjects, String courseName, String description, int numberOfCredits) {
-=======
->>>>>>> Stashed changes
+
     private double credits;
     private String descript;
     private String[] subjects = {""};
 
     public courses(String courseId, String[] subjects, String courseName, String descript, double credits) {
-<<<<<<< Updated upstream
-=======
->>>>>>> 3855244b5ce596b3d89b36619fec30b1757bbe5c
->>>>>>> Stashed changes
+
         this.courseId = courseId;
         this.subjects = subjects;
         this.courseName = courseName;
@@ -48,7 +42,7 @@ public class Course {
     public String getCourseName() { return courseName; }
     public void setCourseName(String courseName) { this.courseName = courseName; }
 
-<<<<<<< Updated upstream
+
     public double getCredits() { return credits; }
     public void setCredits(double credits) { this.credits = credits; }
     public static void main(String args[]){
@@ -58,8 +52,7 @@ public class Course {
 }
 
 
-=======
-<<<<<<< HEAD
+
     public String getDescription() { return description; }
     public void setDescription(String description) { this.description = description; }
 
@@ -92,7 +85,7 @@ public class CourseInitializer {
     }
 }
 
-public class Main {
+
     public static void main(String[] args) {
         String filePath = "path/to/your/courses.csv";
         List<Course> courses = CourseInitializer.initializeCoursesFromTranscript(filePath);
@@ -102,22 +95,5 @@ public class Main {
             System.out.println(course.getCourseName() + " (" + course.getNumberOfCredits() + " credits): " + course.getDescription());
         }
     }
-}
 
-
-
-
-
-=======
-    public double getCredits() { return credits; }
-    public void setCredits(double credits) { this.credits = credits; }
-    public static void main(String args[]){
-        
-    
-    }
-}
-
-
->>>>>>> 3855244b5ce596b3d89b36619fec30b1757bbe5c
->>>>>>> Stashed changes
 
