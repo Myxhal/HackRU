@@ -10,6 +10,10 @@ import java.util.Map;
 public class courseInitializer {
 
     public static List<courses> initializeAvailableCourses(String allCoursesPath, String takenCoursesPath) {
+<<<<<<< HEAD
+=======
+
+>>>>>>> cdf16d39644be0ad348b0355efa40de0dd97a473
         Map<String, courses> allCourses = new HashMap<>();
         String[] computerScienceKeywords = {
             "Software Developer", "Web Developer", "Mobile Application Developer", "Database Administrator",
@@ -36,8 +40,13 @@ public class courseInitializer {
             "Machine Learning Architect", "Data Governance Analyst", "Cloud Security Architect", "IT Procurement Specialist",
             "IT Service Manager", "Network Operations Center Engineer", "SAP Consultant", "Salesforce Developer",
             "Technical Sales Engineer", "Pre-sales Engineer", "Post-sales Engineer", "Technical Account Manager"
+<<<<<<< HEAD
         };
         
+=======
+        };   
+
+>>>>>>> cdf16d39644be0ad348b0355efa40de0dd97a473
 
         // Load all courses
         //Load all courses
