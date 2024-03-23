@@ -16,7 +16,7 @@ public class courses{
     private double numberOfCredits;
     private boolean taken;
 
-    public courses(String courseId, List<String> subjects, String courseName, String description, double numberOfCredits) {
+    public courses(String courseId, String courseName, String description, double numberOfCredits) {
         this.courseId = courseId;
         this.subjects = subjects;
         this.courseName = courseName;

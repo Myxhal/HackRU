@@ -6,141 +6,111 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class courseInitializer {
 
-    public static List<courses> initializeAvailableCourses(String allCoursesPath, String takenCoursesPath) {
-        Map<String, courses> allCourses = new HashMap<>();
-        
+    private static final String[] COMPUTER_SCIENCE_KEYWORDS = {
+    "Software", "Web", "Mobile", "Database", "Systems", "Network", "Data", "Machine Learning",
+    "AI", "Cybersecurity", "Cloud", "DevOps", "UX", "UI", "Frontend", "Backend", "Fullstack",
+    "Embedded", "Hardware", "Engineering", "Technical", "Consulting", "Game", "Blockchain",
+    "CRM", "ERP", "Vision", "NLP", "SEO", "Social Media", "Content", "Audit", "Compliance",
+    "Architecture", "Writing", "Management", "Agile", "Research", "Analytics", "Programming",
+    "Quality", "Security", "Forensics", "Infrastructure", "E-commerce", "Privacy", "IoT",
+    "Reality", "Reliability", "Governance", "Procurement", "Service", "Operations", "SAP",
+    "Salesforce", "Sales", "Support", "Python", "Java", "JavaScript", "C++", "C#", "Ruby",
+    "PHP", "Swift", "Kotlin", "SQL", "TypeScript", "Scala", "Go", "Rust", "Perl", "MATLAB",
+    "R", "DevSecOps", "Fintech", "Quant", "Big Data", "Hadoop", "Spark", "Docker", "Kubernetes",
+    "Git", "GitHub", "Bitbucket", "JIRA", "Scrum", "Kanban", "Microservices", "API",
+    "REST", "GraphQL", "MVC", "SOLID", "OOP", "Functional", "Reactive", "Event-Driven",
+    "TDD", "BDD", "CI/CD", "Automation", "Performance", "Scalability", "High Availability",
+    "Cloud Computing", "AWS", "Azure", "GCP", "OpenStack", "Virtualization", "Orchestration",
+    "Cryptography", "Blockchain", "Smart Contracts", "AR", "VR", "MR", "IoT", "Edge Computing",
+    "Quantum Computing", "Data Mining", "Data Visualization", "Business Intelligence",
+    "Distributed Systems", "Parallel Computing", "Concurrency", "Algorithm Design", "Data Structures",
+    "Computational Theory", "Digital Signal Processing", "Robotics", "3D Printing",
+    "Augmented Reality", "Virtual Reality", "Mixed Reality", "User Research", "Heuristic Evaluation",
+    "A/B Testing", "Prototyping", "Wireframing", "Accessibility", "Internationalization",
+    "Localization", "Ethical Hacking", "Penetration Testing", "Incident Response", "Threat Intelligence",
+    "Risk Management", "Compliance", "ISO", "GDPR", "CCPA", "Data Protection", "Forensics",
+    "Malware Analysis", "Vulnerability Assessment", "Cloud Security", "Network Security",
+    "Application Security", "Information Assurance", "Cryptography", "Blockchain Security",
+    "Identity and Access Management", "SIEM", "SOC Operations", "Threat Hunting", "Digital Forensics",
+    "Incident Handling", "Data Privacy", "Privacy Law", "Privacy Design", "Privacy Engineering",
+    "GDPR Compliance", "CCPA Compliance", "Data Ethics", "AI Ethics", "Tech Policy",
+    "Public Policy", "Regulatory Compliance", "Legal Compliance", "Ethics in Technology"
+    };
 
+    public static List<courses> initializeAvailableCourses(String allCoursesPath, String takenCoursesPath) throws IOException {
+        Map<String, courses> allCourses = readAllCourses(allCoursesPath);
+        markTakenCourses(allCourses, takenCoursesPath);
 
-        // Load all courses
-        //Load all courses
-
-        try (BufferedReader br = new BufferedReader(new FileReader(allCoursesPath))) {
-            String line;
-            br.readLine(); // Skip header line
-            while ((line = br.readLine()) != null) {
-                String[] values = line.split(",");
-                List<String> subjects = Arrays.asList(values[1].split(";"));
-                courses course = new courses(values[0], subjects, values[1], values[2], Double.parseDouble(values[3]));
-                allCourses.put(course.getCourseId(), course);
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        // Mark taken courses
-        try (BufferedReader br = new BufferedReader(new FileReader(takenCoursesPath))) {
-            String line;
-            while ((line = br.readLine()) != null) {
-                // Assuming the taken courses file contains only the course IDs
-                if(allCourses.containsKey(line.trim())) {
-                    allCourses.get(line.trim()).setTaken(true);
-                }
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        // Filter out taken courses and return the list
-        List<courses> availableCourses = new ArrayList<>();
-        for (courses course : allCourses.values()) {
-            if (!course.isTaken()) {
-                availableCourses.add(course);
-            }
-        }
-
-        return availableCourses;
+        // Filter and collect non-taken courses
+        return allCourses.values().stream()
+                .filter(course -> !course.isTaken())
+                .collect(Collectors.toList());
     }
 
-    public static List<String> getRecommendedCoursesForJobs(String filePath, List<String> desiredJobs) {
-        // Convert the array to a list for easier searching
+    private static Map<String, courses> readAllCourses(String filePath) throws IOException {
+        Map<String, courses> coursesMap = new HashMap<>();
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            br.readLine(); // Skip header
+            String line;
+            while ((line = br.readLine()) != null) {
+                courses course = parseCourse(line);
+                coursesMap.put(course.getCourseId(), course);
+            }
+        }
+        return coursesMap;
+    }
 
-        String[] computerScienceKeywords = {
-            "Software Developer", "Web Developer", "Mobile Application Developer", "Database Administrator",
-            "Systems Administrator", "Network Engineer", "Data Scientist", "Data Analyst",
-            "Machine Learning Engineer", "AI Research Scientist", "Cybersecurity Analyst", "Information Security Analyst",
-            "Cloud Solutions Architect", "DevOps Engineer", "Systems Analyst", "Business Analyst",
-            "IT Project Manager", "Software Quality Assurance Tester", "User Experience Designer", "User Interface Designer",
-            "Front-End Developer", "Back-End Developer", "Full Stack Developer",
-            "Embedded Systems Engineer", "Hardware Engineer", "Software Engineer", "Technical Support Specialist",
-            "IT Consultant", "Cloud Engineer", "Data Engineer", "Game Developer",
-            "Blockchain Developer", "CRM Developer", "ERP Developer", "Computer Vision Engineer",
-            "NLP Engineer", "SEO Specialist", "Social Media Manager", "Content Manager",
-            "IT Auditor", "Compliance Analyst", "Systems Engineer", "Network Architect",
-            "Solutions Architect", "Technical Writer", "Product Manager", "Program Manager",
-            "Scrum Master", "Agile Coach", "Research Scientist", "Quantitative Analyst",
-            "Statistical Analyst", "Computer Programmer", "Quality Assurance Engineer", "Security Engineer",
-            "Penetration Tester", "Ethical Hacker", "Digital Forensic Analyst", "Cloud Consultant",
-            "IT Manager", "Chief Information Officer (CIO)", "Chief Technology Officer (CTO)", "Software Architect",
-            "Infrastructure Engineer", "Release Manager", "Data Center Manager", "Database Developer",
-            "E-commerce Analyst", "Network Security Engineer", "Cybersecurity", "Application Support Analyst",
-            "Application Developer", "IT Operations Manager", "Data Privacy Officer", "UX Researcher",
-            "Voice User Interface Designer", "Mobile UX Designer", "IoT Developer", "Augmented Reality Developer",
-            "Virtual Reality Developer", "Site Reliability Engineer", "DevSecOps Engineer", "AI Architect",
-            "Machine Learning Architect", "Data Governance Analyst", "Cloud Security Architect", "IT Procurement Specialist",
-            "IT Service Manager", "Network Operations Center Engineer", "SAP Consultant", "Salesforce Developer",
-            "Technical Sales Engineer", "Pre-sales Engineer", "Post-sales Engineer", "Technical Account Manager"
-        };
-        List<String> validRoles = Arrays.asList(computerScienceKeywords);
-        // Store recommended courses for valid job roles
+    private static void markTakenCourses(Map<String, courses> courses, String filePath) throws IOException {
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                String courseId = line.trim();
+                if (courses.containsKey(courseId)) {
+                    courses.get(courseId).setTaken(true);
+                }
+            }
+        }
+    }
+    
+
+    private static courses parseCourse(String csvLine) {
+        String[] values = csvLine.split(",");
+        List<String> subjects = Arrays.asList(values[1].split(";"));
+        return new courses(values[0], values[1], values[2], Double.parseDouble(values[3]));
+    }
+
+    public static List<String> getRecommendedCoursesForJobs(String filePath, List<String> desiredJobs) throws IOException {
         Map<String, List<String>> jobToCoursesMap = new HashMap<>();
-        
-        // Initialize the list of recommended courses to return
-        List<String> recommendedCourses = new ArrayList<>();
+        List<String> validRoles = Arrays.asList(COMPUTER_SCIENCE_KEYWORDS);
 
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             String line;
             while ((line = br.readLine()) != null) {
                 String[] values = line.split(",");
-                if (values.length == 2) { // Make sure the line is valid
-                    String jobRole = values[0].trim();
-                    String course = values[1].trim();
-
-                    // Check if the job role is one of the desired and valid roles
-                    if (desiredJobs.contains(jobRole) && validRoles.contains(jobRole)) {
-                        jobToCoursesMap.computeIfAbsent(jobRole, k -> new ArrayList<>()).add(course);
-                    }
+                if (values.length == 2 && validRoles.contains(values[0].trim()) && desiredJobs.contains(values[0].trim())) {
+                    jobToCoursesMap.computeIfAbsent(values[0].trim(), k -> new ArrayList<>()).add(values[1].trim());
                 }
             }
-
-            // Aggregate all unique courses from the valid desired jobs
-            for (String job : desiredJobs) {
-                List<String> courses = jobToCoursesMap.get(job);
-                if (courses != null) {
-                    for (String course : courses) {
-                        if (!recommendedCourses.contains(course)) {
-                            recommendedCourses.add(course);
-                        }
-                    }
-                }
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
         }
 
-        return recommendedCourses;
+        return jobToCoursesMap.entrySet().stream()
+                .flatMap(entry -> entry.getValue().stream())
+                .distinct()
+                .collect(Collectors.toList());
     }
 
-        public static String[][] readCSVToArray(String filePath) throws IOException {
-            List<String[]> lines = new ArrayList<>();
-            
-            // Open the file for reading
-            try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
-                String line;
-                
-                // Read the file line by line
-                while ((line = br.readLine()) != null) {
-                    // Split each line into parts using the comma as a separator
-                    String[] parts = line.split(",");
-                    lines.add(parts);
-                }
+    public static String[][] readCSVToArray(String filePath) throws IOException {
+        List<String[]> lines = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                lines.add(line.split(","));
             }
-            
-            // Convert the list of String[] to a 2D array
-            String[][] array = new String[lines.size()][];
-            return lines.toArray(array);
         }
+        return lines.toArray(new String[0][]);
+    }
 }
-
