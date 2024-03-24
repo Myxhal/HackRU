@@ -63,7 +63,7 @@
 01:198:500, Proseminar in Computer Science, Proseminar in Computer Science provides an overview of current research topics and methodologies in computer science, 4.0
 01:198:501, Mathematical Foundations of Data Science, Mathematical Foundations of Data Science explores mathematical concepts underlying data analysis and machine learning algorithms, 4.0
 01:198:503, Computational Thinking, Computational Thinking introduces fundamental concepts and problem-solving strategies in computer science, 3.0
-01:198:504, Computational Modeling, Computational Modeling covers techniques for modeling and simulating complex systems using computational methods, 4.0
+01:198:504, Computational Modeling II, Computational Modeling covers techniques for modeling and simulating complex systems using computational methods, 4.0
 01:198:505, Computer Structures, Computer Structures examines the organization and architecture of computer systems, 4.0
 01:198:507, Advanced Computer Architecture, Advanced Computer Architecture delves into advanced topics in computer architecture and design, 4.0
 01:198:508, Formal Language and Automata, Formal Language and Automata explores formal languages automata theory and their applications in computer science, 4.0
@@ -105,27 +105,26 @@
 01:198:553, Design of Internet Services, Design of Internet Services covers the design and implementation of internet-based services and applications, 4.0
 01:198:554, Capstone Project I, Capstone Project I is the first part of a two-semester project where students apply their knowledge to solve a significant computer science problem, 3.0
 01:198:555, Capstone Project II, Capstone Project II is the second part of a two-semester project where students apply their knowledge to solve a significant computer science problem, 3.0 
-01:750:203, General Physics I, Elementary but detailed analysis of fundamental topics; motion; gravitation; momentum; energy; electromagnetism; waves; heat; kinetic theory; quantum effects; atomic and nuclear structure, 3.0
-01:750:204, General Physics II,  Elementary but detailed analysis of fundamental topics; motion; gravitation; momentum; energy; electromagnetism; waves; heat; kinetic theory; quantum effects; atomic and nuclear structure, 3.0
-01:750:205, General Physics Lab, Laboratory to complement 01:750:203-204, 1.0
-01:750:206, General Physics Lab II, Laboratory to complement 01:750:203-204, 1.0
-01:750:123, Anal Physics I, Analytic Physics 1 is the study of fundamental principles and mathematical frameworks governing motion; forces; energy; and properties of matter, 4.0
-01:750:124, Anal Physics I Lab, Lab to complement 01:750:123, 1.0
-
-01:750:227, Anal Physics IIA, Analytic Physics 2 explores advanced concepts in classical mechanics electromagnetism and thermodynamics., 3.0
-01:750:229, General Physics II Lab, Laboratory to complement 01:750:2227, 1.0
-01:750:271, Honors Physics I, Relativity wave and quantum properties of photons and electrons the structure of atoms molecules and solids nuclear physics elementary particles, 3.0
-01:750:272, Honors Physics II,Relativity wave and quantum properties of photons and electrons the structure of atoms molecules and solids nuclear physics elementary particles, 3.0
-01:750:275, Classical Physics Laboratory, Labratory to complement 01:750:275, 1.0
-01:750:276, Classical Physics Laboratory, Labratory to complement 01:750:276, 1.0 
-01:750:201, Extended General Physics, Elementary but detailed analysis of fundamental topics, 5.0
-01:750:202, Extended General Physics II, Elementary but detailed analysis of fundamental topics, 5.0
-01:750:193, Physics for the Sciences, Introduction to physics with biological ecological and chemical applications Selected topics in mechanics thermodynamics fluids waves electricity magnetism optics and modern physics Integrated laboratory experiments, 4.0
-01:750:194, Physics for the Sciences II, Continuation of introduction to physics with biological ecological and chemical applications Selected topics in mechanics thermodynamics fluids waves electricity magnetism optics and modern physics Integrated laboratory experiments, 4.0
-01:160:159, General Chemistry for Engineers, 
-01:160:160, General Chemistry, For Science Majors. Introduction To Chemical Principles And Their Application. Stoichiometry States Of Matter Atomic And Molecular Structure Solutions Thermodynamics Equilibrium Oxidation-Reduction Kinetics Nonmetals Metals And Coordination Compounds And Nuclear Chemistry., 4.0
-01:160:161, General Chemistry II, For Science Majors. Introduction To Chemical Principles And Their Application. Stoichiometry States Of Matter Atomic And Molecular Structure Solutions Thermodynamics Equilibrium Oxidation-Reduction Kinetics Nonmetals Metals And Coordination Compounds And Nuclear Chemistry., 4.0
-01:160:162, General Chemistry III,For Science Majors. Introduction To Chemical Principles And Their Application. Stoichiometry States Of Matter Atomic And Molecular Structure Solutions Thermodynamics Equilibrium Oxidation-Reduction Kinetics Nonmetals Metals And Coordination Compounds And Nuclear Chemistry., 4.0
-01:160:163, Honors Gen Chem,Honors General Chemistry 1 focuses on fundamental chemical principles including stoichiometry; atomic structure; and thermodynamics., 4.0
-01:160:164, Honors Gen Chem II, Gen Chem 2 delves deeper into topics such as chemical equilibrium; kinetics; and electrochemistry; building upon the concepts introduced in the first course., 4.0
-01:160:171, Gen Chem Lab, Laboratory illustrating basic chemical methods, 1.0
+01:750:203,General Physics I,This course offers an elementary yet detailed analysis of fundamental physics topics including motion; gravitation; momentum; energy; electromagnetism; waves; heat; kinetic theory; quantum effects; and atomic and nuclear structure.,3.0
+01:750:204,General Physics II,Building upon the concepts introduced in General Physics I; this course continues the exploration of fundamental physics principles; covering topics such as electromagnetism; waves; heat; kinetic theory; quantum effects; and atomic and nuclear structure in more depth.,3.0
+01:750:205,General Physics Lab,Complementary to the theoretical aspects covered in General Physics I; this laboratory course provides hands-on experiments and practical applications related to motion; gravitation; momentum; energy; electromagnetism; waves; heat; and atomic and nuclear structure.,1.0
+01:750:206,General Physics Lab II,This laboratory course complements the concepts covered in General Physics II; offering students further practical experience in conducting experiments related to electromagnetism; waves; heat; quantum effects; and atomic and nuclear structure.,1.0
+01:750:123,Anal Physics I,Analytic Physics I delves into the mathematical frameworks governing motion; forces; energy; and properties of matter; providing students with a deeper understanding of fundamental physical principles.,4.0
+01:750:124,Anal Physics I Lab,Complementing Anal Physics I; this lab course allows students to apply theoretical concepts from the lecture through hands-on experiments; reinforcing their understanding of analytical physics principles.,1.0
+01:750:227,Anal Physics IIA,Building upon the foundational concepts introduced in Analytic Physics I; this course explores advanced topics in classical mechanics; electromagnetism; and thermodynamics; offering students a more comprehensive understanding of these subjects.,3.0
+01:750:229,General Physics II Lab,Similar to its counterpart for General Physics I; this lab course provides students with practical experience and experimentation in topics related to electromagnetism; waves; heat; quantum effects; and atomic and nuclear structure.,1.0
+01:750:271,Honors Physics I,This honors-level course delves into advanced topics such as relativity; wave and quantum properties of photons and electrons; atomic and molecular structures; nuclear physics; and elementary particles; offering a rigorous exploration of these concepts.,3.0
+01:750:272,Honors Physics II,Continuing from Honors Physics I; this course further explores advanced physics topics including relativity; wave and quantum properties; atomic and molecular structures; nuclear physics; and elementary particles; providing a deeper understanding of these complex phenomena.,3.0
+01:750:275,Classical Physics Laboratory,This laboratory course complements the theoretical aspects covered in Honors Physics I and II; offering students the opportunity to conduct experiments related to relativity; wave and quantum properties; atomic and molecular structures; nuclear physics; and elementary particles.,1.0
+01:750:276,Classical Physics Laboratory,This laboratory course complements the theoretical aspects covered in Honors Physics I and II; offering students the opportunity to conduct experiments related to relativity; wave and quantum properties; atomic and molecular structures; nuclear physics; and elementary particles.,1.0
+01:750:201,Extended General Physics,Similar to General Physics I and II but with a broader scope; this course provides an elementary yet detailed analysis of fundamental physics topics; catering to students who require additional instruction or have a broader interest in physics.,5.0
+01:750:202,Extended General Physics II,A continuation of Extended General Physics; this course further expands on fundamental physics principles; offering students a comprehensive understanding of various topics in physics.,5.0
+01:750:193,Physics for the Sciences,Introduction to physics with biological ecological and chemical applications Selected topics in mechanics thermodynamics fluids waves electricity magnetism optics and modern physics Integrated laboratory experiments,4.0
+01:750:194,Physics for the Sciences II,Building upon the concepts introduced in Physics for the Sciences I; this course continues to explore physics principles with applications in biological ecological and chemical contexts; further expanding on topics such as mechanics thermodynamics fluids waves electricity magnetism optics and modern physics.,4.0
+01:160:159,General Chemistry for Engineers,This course provides a foundational understanding of chemistry tailored for engineering students; covering principles such as stoichiometry atomic and molecular structure thermodynamics equilibrium kinetics and nuclear chemistry., 
+01:160:160,General Chemistry,A comprehensive introduction to chemical principles and their applications; covering topics such as stoichiometry states of matter atomic and molecular structure solutions thermodynamics equilibrium oxidation-reduction kinetics nonmetals metals coordination compounds and nuclear chemistry.,4.0
+01:160:161,General Chemistry II,Building upon the concepts introduced in General Chemistry I; this course explores more advanced topics such as chemical equilibrium kinetics electrochemistry and other principles; providing students with a deeper understanding of chemical phenomena.,4.0
+01:160:162,General Chemistry III,Continuing from General Chemistry II; this course further expands on chemical principles and their applications; covering topics such as thermodynamics equilibrium kinetics and other advanced concepts in chemistry.,4.0
+01:160:163,Honors Gen Chem,Focusing on fundamental chemical principles including stoichiometry atomic structure and thermodynamics; this honors-level course offers a rigorous exploration of introductory chemistry concepts.,4.0
+01:160:164,Honors Gen Chem II,Building upon the concepts introduced in Honors Gen Chem I; this course delves deeper into topics such as chemical equilibrium kinetics and electrochemistry; providing students with a comprehensive understanding of these principles.,4.0
+01:160:171,Gen Chem Lab,Complementing the theoretical aspects covered in general chemistry courses; this laboratory course offers hands-on experiments illustrating basic chemical methods and principles.,1.0 
