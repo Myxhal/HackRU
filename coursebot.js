@@ -16,7 +16,7 @@ function csvTo2DArray(filePath) {
 }
 var courses = csvTo2DArray('courses.csv');
 
-var frontEnd;
+var frontEnd = document.getElementById('frontDev').value;
 var backEnd;
 var fullStack;
 var mobileDev;
@@ -32,3 +32,8 @@ var imbedSys;
 var research;
 var ux;
 const fields = [frontEnd,backEnd,fullStack,mobileDev,gameDev,dataSci,cyberSecurity,netManage,qAssure,cloud,consult,dataAdmin,imbedSys,research,ux]
+for (let i=0;i<fields.length-1;i++){
+    if(fields[i]!=null){
+        fields[i] = true;
+    }
+}
