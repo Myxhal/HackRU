@@ -130,7 +130,36 @@
                 <div class="body"> email@gmail.com </div>
             </div>
             </div>
-            <br>
+            <br><script>
+                window.addEventListener('DOMContentLoaded', (event) => {
+                    // Get the search input element and all card elements
+                    const searchInput = document.getElementById('search');
+                    const cards = document.querySelectorAll('.card');
+                
+                    // Function to filter cards based on search input
+                    function filterCards() {
+                        const searchText = searchInput.value.toLowerCase();
+                
+                        // Loop through each card
+                        cards.forEach(card => {
+                            const headerText = card.querySelector('.header').textContent.toLowerCase();
+                            const bodyText = card.querySelector('.body').textContent.toLowerCase();
+                
+                            // Check if the card's header or body includes the search text
+                            if (headerText.includes(searchText) || bodyText.includes(searchText)) {
+                                card.style.display = ''; // Show the card
+                            } else {
+                                card.style.display = 'none'; // Hide the card
+                            }
+                        });
+                    }
+                
+                    // Add an event listener to the search input
+                    searchInput.addEventListener('input', filterCards);
+                });
+                </script>
+                
+
             <br>
                         
           <div class="question" id="answer">

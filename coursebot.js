@@ -43,7 +43,9 @@ var dataAdmin = document.getElementById('dataAdmin').value;
 var imbedSys = document.getElementById('imbedSys').value;
 var research = document.getElementById('research').value;
 var ux = document.getElementById('ux').value;
+
 const fields = [frontEnd,backEnd,fullStack,mobileDev,gameDev,dataSci,cyberSecurity,netManage,qAssure,cloud,consult,dataAdmin,imbedSys,research,ux]
+
 for (let i=0;i<fields.length-1;i++){
     if(fields[i]!=null){
         fields[i] = true;
@@ -56,7 +58,7 @@ for (let i=0;i<fields.length-1;i++){
 
 removeTakenCourses(courses, takenCourses);
 
-let takenCourses = ["selectedCoursesTakenFromWebsite"];
+let takenCourses = ["mychals stuff somehow gets converted into here"];
 
 function removeTakenCourses(courses, takenCourses) {
 
@@ -67,11 +69,10 @@ function removeTakenCourses(courses, takenCourses) {
         // Check if the current course's identifier matches any in the takenCourses array
         if (takenCourses.includes(courses[i][1])) {
             // Remove the course from the courses array if there's a match
-            courses.splice(i, 1);
+            courses.splice(i, 1);   
         }
     }
 }
-
 
 
 //comparing arrays to get courses list
