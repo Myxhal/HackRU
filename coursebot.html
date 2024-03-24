@@ -18,7 +18,7 @@
     <table align="center">
         <tr><p style="font-family: Helvetica; color:white; font-weight: bold;"> Answer these questions to get your computer science course suggestions</p></tr>
         <br>
-        <tr><form action="coursebot.js">
+        <tr><form action="">
             <p style="font-family: Helvetica; color: rgb(250,250,0);">Are you completing a B.S. or B.A:</p>
             <label for="query"style="font-family: Helvetica; color: white">B.A.</label>
             <input type="radio" id="query" name="query">
@@ -73,7 +73,19 @@
             <label for="itConsult"style="font-family: Helvetica; color: white">IT Consultant</label>
             <br>
             <br>
-            <input type="submit" style="font-family: Helvetica; color:white; font-weight: bold; background-color: rgb(215, 24, 24); width:200; height:100;" value="Calculate">
+            <button>Next</button>
+          </form></tr>
+          <tr>
+            <br>
+            <br>
+            <form action="" method="post" enctype="multipart/form-data">
+            <label for="transcript" style="font-family: Helvetica; color: rgb(250,250,0);">Upload Your Unofficial Transcript Here</label>
+            <br>
+            <br>
+            <input align="center" type="file" style="font-family: Helvetica; color: white" name="transcript" accept="img/*">
+            <br>
+            <br>
+            <button class="text-white bg-red-500 px-4 py-2 rounded-md">Submit</button>
           </form></tr>
     </table>
 </body>
