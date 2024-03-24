@@ -51,6 +51,15 @@ public class courseInitializer {
                 .collect(Collectors.toList());
     }
 
+
+
+
+
+
+
+
+
+
     private static Map<String, courses> readAllCourses(String filePath) throws IOException {
         Map<String, courses> coursesMap = new HashMap<>();
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
@@ -64,6 +73,16 @@ public class courseInitializer {
         return coursesMap;
     }
 
+
+
+
+
+
+
+
+
+
+
     private static void markTakenCourses(Map<String, courses> courses, String filePath) throws IOException {
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
             String line;
@@ -75,6 +94,13 @@ public class courseInitializer {
             }
         }
     }
+
+
+
+
+
+
+
     
 
     private static courses parseCourse(String csvLine) {
@@ -82,6 +108,13 @@ public class courseInitializer {
         List<String> subjects = Arrays.asList(values[1].split(";"));
         return new courses(values[0], values[1], values[2], Double.parseDouble(values[3]));
     }
+
+
+
+
+
+
+
 
     public static List<String> getRecommendedCoursesForJobs(String filePath, List<String> desiredJobs) throws IOException {
         Map<String, List<String>> jobToCoursesMap = new HashMap<>();
@@ -103,6 +136,16 @@ public class courseInitializer {
                 .collect(Collectors.toList());
     }
 
+
+
+
+
+
+
+
+
+
+    
     public static String[][] readCSVToArray(String filePath) throws IOException {
         List<String[]> lines = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {

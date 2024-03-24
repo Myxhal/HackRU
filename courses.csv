@@ -35,15 +35,15 @@
 01:198:461,Machine Learning Principles, Machine Learning Principles covers fundamental principles and algorithms in machine learning including supervised unsupervised and reinforcement learning, 4.0
 01:198:462,Introduction to Deep Learning, Introduction to Deep Learning provides an introduction to deep neural networks and their applications in various domains, 4.0
 01:198:493,Independent Study in Computer Science, Independent Study in Computer Science allows students to pursue individual projects under faculty supervision, 4.0
-14:332:376, Virtual Reality, Virtual Reality explores the principles and technologies behind virtual reality systems including hardware devices and interactive environments, 3.0
-14:332:423, Telecommunication Networks, Telecommunication Networks covers the design and management of telecommunication networks including network architectures and protocols, 4.0
-14:332:424, Introduction to Information and Network Security, Introduction to Information and Network Security covers the fundamentals of information security including cryptography network security and risk management, 4.0
-14:332:443, Machine learning for Engineers, Machine learning for Engineers introduces machine learning techniques tailored for engineering applications including predictive modeling and optimization, 4.0
-14:332:451, Introduction to Parallel and Distributed Computing, Introduction to Parallel and Distributed Computing covers parallel programming models and distributed computing paradigms, 4.0
-14:332:452, Software Engineering, Software Engineering covers principles and practices of software engineering including requirements analysis design testing and maintenance, 4.0
-14:332:453, Mobile App Engineering and User Experience, Mobile App Engineering and User Experience covers the development and design of mobile applications focusing on usability and user experience, 3.0
-14:332:456, Network-Centric Programming, Network-Centric Programming covers programming techniques for networked applications including socket programming and web services development, 4.0
-14:332:472, Robotics and Computer Vision, Robotics and Computer Vision explores the principles and algorithms behind robotic systems and computer vision applications, 4.0
+01:332:376, Virtual Reality, Virtual Reality explores the principles and technologies behind virtual reality systems including hardware devices and interactive environments, 3.0
+01:332:423, Telecommunication Networks, Telecommunication Networks covers the design and management of telecommunication networks including network architectures and protocols, 4.0
+01:332:424, Introduction to Information and Network Security, Introduction to Information and Network Security covers the fundamentals of information security including cryptography network security and risk management, 4.0
+01:332:443, Machine learning for Engineers, Machine learning for Engineers introduces machine learning techniques tailored for engineering applications including predictive modeling and optimization, 4.0
+01:332:451, Introduction to Parallel and Distributed Computing, Introduction to Parallel and Distributed Computing covers parallel programming models and distributed computing paradigms, 4.0
+01:332:452, Software Engineering, Software Engineering covers principles and practices of software engineering including requirements analysis design testing and maintenance, 4.0
+01:332:453, Mobile App Engineering and User Experience, Mobile App Engineering and User Experience covers the development and design of mobile applications focusing on usability and user experience, 3.0
+01:332:456, Network-Centric Programming, Network-Centric Programming covers programming techniques for networked applications including socket programming and web services development, 4.0
+01:332:472, Robotics and Computer Vision, Robotics and Computer Vision explores the principles and algorithms behind robotic systems and computer vision applications, 4.0
 01:640:338, Discrete and Probabilistic Models in Biology, Discrete and Probabilistic Models in Biology covers mathematical models and probabilistic methods applied to biological systems, 4.0
 01:640:348, Cryptography, Cryptography covers cryptographic algorithms and protocols used to secure communication and data, 4.0
 01:640:354, Linear Optimization, Linear Optimization covers optimization techniques for solving linear programming problems, 4.0
@@ -60,51 +60,51 @@
 01:960:463, Regression Methods, Regression Methods focuses on regression analysis techniques for modeling relationships between variables, 4.0
 01:960:476, Introduction to Sampling, Introduction to Sampling introduces sampling techniques and their use in statistical inference, 3.0
 01:960:486, Computing and Graphics in Applied Statistics, Computing and Graphics in Applied Statistics covers computational methods and visualization techniques for analyzing statistical data, 3.0
-16:198:500, Proseminar in Computer Science, Proseminar in Computer Science provides an overview of current research topics and methodologies in computer science, 4.0
-16:198:501, Mathematical Foundations of Data Science, Mathematical Foundations of Data Science explores mathematical concepts underlying data analysis and machine learning algorithms, 4.0
-16:198:503, Computational Thinking, Computational Thinking introduces fundamental concepts and problem-solving strategies in computer science, 3.0
-16:198:504, Computational Modeling, Computational Modeling covers techniques for modeling and simulating complex systems using computational methods, 4.0
-16:198:505, Computer Structures, Computer Structures examines the organization and architecture of computer systems, 4.0
-16:198:507, Advanced Computer Architecture, Advanced Computer Architecture delves into advanced topics in computer architecture and design, 4.0
-16:198:508, Formal Language and Automata, Formal Language and Automata explores formal languages automata theory and their applications in computer science, 4.0
-16:198:509, Foundations of Computer Science, Foundations of Computer Science covers fundamental concepts and theoretical frameworks in computer science, 4.0
-16:198:510, Numerical Analysis, Numerical Analysis focuses on numerical methods for solving mathematical problems efficiently and accurately, 4.0
-16:198:512, Introduction to Data Structures and Algorithms, Introduction to Data Structures and Algorithms introduces basic data structures and algorithm analysis techniques, 4.0
-16:198:513, Design and Analysis of Data Structures and Algorithms, Design and Analysis of Data Structures and Algorithms covers advanced data structures and algorithm design paradigms, 4.0
-16:198:514, Design And Analysis Of Data Structures And Algorithms II, Design And Analysis Of Data Structures And Algorithms II delves deeper into advanced data structures and algorithm analysis techniques, 4.0
-16:198:515, Programming Languages And Compilers I, Programming Languages And Compilers I covers programming language concepts and compiler design principles, 4.0
-16:198:516, Programming Languages And Compilers II, Programming Languages And Compilers II explores advanced topics in programming languages and compiler construction, 4.0
-16:198:518, Operating Systems Design, Operating Systems Design examines the principles and design of modern operating systems, 4.0
-16:198:519, Operating System Theory, Operating System Theory delves into the theoretical foundations of operating systems, 4.0
-16:198:520, Introduction To Artificial Intelligence, Introduction To Artificial Intelligence introduces the principles and techniques of artificial intelligence, 4.0
-16:198:521, Linear Programming, Linear Programming covers mathematical optimization techniques for solving linear programming problems, 4.0
-16:198:522, Network and Combinatorial Optimization Algorithms, Network and Combinatorial Optimization Algorithms explores optimization algorithms for network and combinatorial problems, 4.0
-16:198:523, Computer Graphics, Computer Graphics covers the principles and algorithms used in computer graphics rendering and modeling, 4.0
-16:198:525, Brain-Inspired Computing, Brain-Inspired Computing explores computational models inspired by the brain such as neural networks and deep learning, 3.0
-16:198:526, Data Interaction and Visual Analytics, Data Interaction and Visual Analytics covers techniques for interactive data exploration and visualization, 3.0
-16:198:527, Database Systems for Data Science, Database Systems for Data Science covers database design principles and SQL for managing and analyzing large datasets, 4.0
-16:198:529, Computational Geometry, Computational Geometry explores algorithms and data structures for solving geometric problems, 4.0
-16:198:530, Principles of Artificial Intelligence, Principles of Artificial Intelligence introduces fundamental concepts and techniques in artificial intelligence, 4.0
-16:198:532, Foundations Of Knowledge Representation, Foundations Of Knowledge Representation covers formalisms and methods for representing knowledge in AI systems, 4.0
-16:198:533, Natural Language Processing, Natural Language Processing covers algorithms and techniques for processing and understanding human language, 4.0
-16:198:534, Computer Vision, Computer Vision explores algorithms for analyzing and interpreting visual data, 4.0
-16:198:535, Pattern Recognition: Theory and Applications, Pattern Recognition: Theory and Applications covers statistical and machine learning techniques for pattern recognition, 4.0
-16:198:536, Machine Learning, Machine Learning covers the principles and algorithms used in machine learning and data mining, 4.0
-16:198:538, Complexity Of Computation, Complexity Of Computation explores the computational complexity of algorithms and problems, 4.0
-16:198:539, Database Management Systems, Database Management Systems covers advanced topics in database systems and management, 4.0
-16:198:540, Combinatorial Methods In Complexity Theory, Combinatorial Methods In Complexity Theory explores combinatorial methods for analyzing algorithmic complexity, 4.0
-16:198:541, Advanced Data Management, Advanced Data Management covers advanced techniques for managing and analyzing large-scale data, 4.0
-16:198:543, Massive Data Storage Retrieval and Deep Learning, Massive Data Storage Retrieval and Deep Learning covers techniques for storing retrieving and analyzing massive datasets using deep learning methods, 4.0
-16:198:544, Computer Security, Computer Security covers principles and techniques for securing computer systems and networks, 4.0
-16:198:545, Distributed Systems, Distributed Systems covers principles and techniques for designing and building distributed systems, 4.0
-16:198:546, Computer System Security, Computer System Security explores techniques for securing computer systems against cyber threats, 4.0
-16:198:547, The Security and Dependability of Distributed Systems, The Security and Dependability of Distributed Systems covers security and reliability issues in distributed systems, 4.0
-16:198:549, Artificial Intelligence for Visual Computing, Artificial Intelligence for Visual Computing covers AI techniques for analyzing and understanding visual data, 4.0
-16:198:550, Massive Data Mining, Massive Data Mining covers advanced techniques for mining knowledge from massive datasets, 4.0
-16:198:552, Computer Networks, Computer Networks covers principles and protocols of computer networking, 4.0
-16:198:553, Design of Internet Services, Design of Internet Services covers the design and implementation of internet-based services and applications, 4.0
-16:198:554, Capstone Project I, Capstone Project I is the first part of a two-semester project where students apply their knowledge to solve a significant computer science problem, 3.0
-16:198:555, Capstone Project II, Capstone Project II is the second part of a two-semester project where students apply their knowledge to solve a significant computer science problem, 3.0 
+01:198:500, Proseminar in Computer Science, Proseminar in Computer Science provides an overview of current research topics and methodologies in computer science, 4.0
+01:198:501, Mathematical Foundations of Data Science, Mathematical Foundations of Data Science explores mathematical concepts underlying data analysis and machine learning algorithms, 4.0
+01:198:503, Computational Thinking, Computational Thinking introduces fundamental concepts and problem-solving strategies in computer science, 3.0
+01:198:504, Computational Modeling, Computational Modeling covers techniques for modeling and simulating complex systems using computational methods, 4.0
+01:198:505, Computer Structures, Computer Structures examines the organization and architecture of computer systems, 4.0
+01:198:507, Advanced Computer Architecture, Advanced Computer Architecture delves into advanced topics in computer architecture and design, 4.0
+01:198:508, Formal Language and Automata, Formal Language and Automata explores formal languages automata theory and their applications in computer science, 4.0
+01:198:509, Foundations of Computer Science, Foundations of Computer Science covers fundamental concepts and theoretical frameworks in computer science, 4.0
+01:198:510, Numerical Analysis, Numerical Analysis focuses on numerical methods for solving mathematical problems efficiently and accurately, 4.0
+01:198:512, Introduction to Data Structures and Algorithms, Introduction to Data Structures and Algorithms introduces basic data structures and algorithm analysis techniques, 4.0
+01:198:513, Design and Analysis of Data Structures and Algorithms, Design and Analysis of Data Structures and Algorithms covers advanced data structures and algorithm design paradigms, 4.0
+01:198:514, Design And Analysis Of Data Structures And Algorithms II, Design And Analysis Of Data Structures And Algorithms II delves deeper into advanced data structures and algorithm analysis techniques, 4.0
+01:198:515, Programming Languages And Compilers I, Programming Languages And Compilers I covers programming language concepts and compiler design principles, 4.0
+01:198:516, Programming Languages And Compilers II, Programming Languages And Compilers II explores advanced topics in programming languages and compiler construction, 4.0
+01:198:518, Operating Systems Design, Operating Systems Design examines the principles and design of modern operating systems, 4.0
+01:198:519, Operating System Theory, Operating System Theory delves into the theoretical foundations of operating systems, 4.0
+01:198:520, Introduction To Artificial Intelligence, Introduction To Artificial Intelligence introduces the principles and techniques of artificial intelligence, 4.0
+01:198:521, Linear Programming, Linear Programming covers mathematical optimization techniques for solving linear programming problems, 4.0
+01:198:522, Network and Combinatorial Optimization Algorithms, Network and Combinatorial Optimization Algorithms explores optimization algorithms for network and combinatorial problems, 4.0
+01:198:523, Computer Graphics, Computer Graphics covers the principles and algorithms used in computer graphics rendering and modeling, 4.0
+01:198:525, Brain-Inspired Computing, Brain-Inspired Computing explores computational models inspired by the brain such as neural networks and deep learning, 3.0
+01:198:526, Data Interaction and Visual Analytics, Data Interaction and Visual Analytics covers techniques for interactive data exploration and visualization, 3.0
+01:198:527, Database Systems for Data Science, Database Systems for Data Science covers database design principles and SQL for managing and analyzing large datasets, 4.0
+01:198:529, Computational Geometry, Computational Geometry explores algorithms and data structures for solving geometric problems, 4.0
+01:198:530, Principles of Artificial Intelligence, Principles of Artificial Intelligence introduces fundamental concepts and techniques in artificial intelligence, 4.0
+01:198:532, Foundations Of Knowledge Representation, Foundations Of Knowledge Representation covers formalisms and methods for representing knowledge in AI systems, 4.0
+01:198:533, Natural Language Processing, Natural Language Processing covers algorithms and techniques for processing and understanding human language, 4.0
+01:198:534, Computer Vision, Computer Vision explores algorithms for analyzing and interpreting visual data, 4.0
+01:198:535, Pattern Recognition: Theory and Applications, Pattern Recognition: Theory and Applications covers statistical and machine learning techniques for pattern recognition, 4.0
+01:198:536, Machine Learning, Machine Learning covers the principles and algorithms used in machine learning and data mining, 4.0
+01:198:538, Complexity Of Computation, Complexity Of Computation explores the computational complexity of algorithms and problems, 4.0
+01:198:539, Database Management Systems, Database Management Systems covers advanced topics in database systems and management, 4.0
+01:198:540, Combinatorial Methods In Complexity Theory, Combinatorial Methods In Complexity Theory explores combinatorial methods for analyzing algorithmic complexity, 4.0
+01:198:541, Advanced Data Management, Advanced Data Management covers advanced techniques for managing and analyzing large-scale data, 4.0
+01:198:543, Massive Data Storage Retrieval and Deep Learning, Massive Data Storage Retrieval and Deep Learning covers techniques for storing retrieving and analyzing massive datasets using deep learning methods, 4.0
+01:198:544, Computer Security, Computer Security covers principles and techniques for securing computer systems and networks, 4.0
+01:198:545, Distributed Systems, Distributed Systems covers principles and techniques for designing and building distributed systems, 4.0
+01:198:546, Computer System Security, Computer System Security explores techniques for securing computer systems against cyber threats, 4.0
+01:198:547, The Security and Dependability of Distributed Systems, The Security and Dependability of Distributed Systems covers security and reliability issues in distributed systems, 4.0
+01:198:549, Artificial Intelligence for Visual Computing, Artificial Intelligence for Visual Computing covers AI techniques for analyzing and understanding visual data, 4.0
+01:198:550, Massive Data Mining, Massive Data Mining covers advanced techniques for mining knowledge from massive datasets, 4.0
+01:198:552, Computer Networks, Computer Networks covers principles and protocols of computer networking, 4.0
+01:198:553, Design of Internet Services, Design of Internet Services covers the design and implementation of internet-based services and applications, 4.0
+01:198:554, Capstone Project I, Capstone Project I is the first part of a two-semester project where students apply their knowledge to solve a significant computer science problem, 3.0
+01:198:555, Capstone Project II, Capstone Project II is the second part of a two-semester project where students apply their knowledge to solve a significant computer science problem, 3.0 
 01:750:203, General Physics I, Elementary but detailed analysis of fundamental topics; motion; gravitation; momentum; energy; electromagnetism; waves; heat; kinetic theory; quantum effects; atomic and nuclear structure, 3.0
 01:750:204, General Physics II,  Elementary but detailed analysis of fundamental topics; motion; gravitation; momentum; energy; electromagnetism; waves; heat; kinetic theory; quantum effects; atomic and nuclear structure, 3.0
 01:750:205, General Physics Lab, Laboratory to complement 01:750:203-204, 1.0
