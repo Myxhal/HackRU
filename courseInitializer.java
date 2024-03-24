@@ -51,15 +51,6 @@ public class courseInitializer {
                 .collect(Collectors.toList());
     }
 
-
-
-
-
-
-
-
-
-
     private static Map<String, courses> readAllCourses(String filePath) throws IOException {
         Map<String, courses> coursesMap = new HashMap<>();
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
