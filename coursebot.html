@@ -19,14 +19,16 @@
     <table align="center">
         <tr><p style="font-family: Helvetica; color:white; font-weight: bold;"> Answer these questions to get your computer science course suggestions</p></tr>
         <br>
-        <tr><form action="">
+        <tr>
+            <div class="question" id="question1"><form action="">
             <p style="font-family: Helvetica; color: rgb(250,250,0);">Are you completing a B.S. or B.A:</p>
             <label for="query"style="font-family: Helvetica; color: white">B.A.</label>
             <input type="radio" id="query" name="query">
             <label for="query"style="font-family: Helvetica; color: white">    B.S.</label>
             <input type="radio" id="query" name="query">
-            <br>
-            <br>
+            <button onclick="showNextQuestion(1)">Next</button>
+            </div>
+            <div class="question" id="question2">
             <p style="font-family: Helvetica; color: rgb(250,250,0);">What fields are you interested in? (Select all that apply)</p>
             <input type="checkbox" id="frontDev" value="frontDev">
             <label for="frontDev"style="font-family: Helvetica; color: white">Front-End Development</label>
@@ -72,6 +74,8 @@
             <br>
             <input type="checkbox" id="ux" value="ux">
             <label for="ux"style="font-family: Helvetica; color: white">User Experience and Design</label>
+            <button onclick="showNextQuestion(2)">Next</button>
+            </div>
             <br>
             <br>
           
