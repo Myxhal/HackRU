@@ -43,6 +43,27 @@ for (let i=0;i<fields.length-1;i++){
     }
 }
 
+
+removeTakenCourses(courses, takenCourses);
+
+let takenCourses = ["selectedCoursesTakenFromWebsite"];
+
+function removeTakenCourses(courses, takenCourses) {
+
+    courses.splice(0, 1); // This removes the first element of the courses array
+
+    // Loop through the courses array from the end to the beginning
+    for (let i = courses.length - 1; i > 0; i--) {
+        // Check if the current course's identifier matches any in the takenCourses array
+        if (takenCourses.includes(courses[i][1])) {
+            // Remove the course from the courses array if there's a match
+            courses.splice(i, 1);
+        }
+    }
+}
+
+
+
 //comparing arrays to get courses list
 var arr = [];
 for(let i=0;i<courses.length-1;i++){
@@ -56,3 +77,4 @@ for(let i=0;i<courses.length-1;i++){
         arr.push(courses[i]);
     }
 }
+
