@@ -21,9 +21,14 @@ input{
 }
 
 .card{
+<<<<<<< Updated upstream
     border: 1px solid red;
     
     background-color: white;
+=======
+    border: 1px solid black;
+    background-color: rgb(221, 221, 221);
+>>>>>>> Stashed changes
     padding: .5rem;
     width: ;
 }
