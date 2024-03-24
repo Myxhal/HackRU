@@ -21,11 +21,11 @@ input{
     padding: .5rem;
 }
 
-.card > header{
+.card header{
     margin-bottom: .25rem;
 }
 
-.card > body{
+.card body{
     font-size: .8rem;
     color: #777;
 }
