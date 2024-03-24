@@ -19,6 +19,8 @@ var courses = csvTo2DArray('courses.csv');
 
 //fields variables and array implementation
 var frontEnd = document.getElementById('frontDev').value;
+var backEnd = document.getElementById('frontDev').value;
+var backEnd = document.getElementById('frontDev').value;
 var backEnd;
 var fullStack;
 var mobileDev;
@@ -37,5 +39,22 @@ const fields = [frontEnd,backEnd,fullStack,mobileDev,gameDev,dataSci,cyberSecuri
 for (let i=0;i<fields.length-1;i++){
     if(fields[i]!=null){
         fields[i] = true;
+    }
+    else{
+        fields[i] = false;
+    }
+}
+
+//comparing arrays to get courses list
+var arr = [];
+for(let i=1;i<courses.length-1;i++){
+    var counter = 0;
+    for(let j=1;j<16;i++){
+        if(courses[i][j]==fields[j-1]){
+            counter++;
+        }
+    }
+    if(counter>=6){
+        arr.add(courses[i]);
     }
 }
