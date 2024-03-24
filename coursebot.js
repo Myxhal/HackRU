@@ -21,20 +21,20 @@ var courses = csvTo2DArray('courses.csv');
 var frontEnd = document.getElementById('frontDev').value;
 var backEnd = document.getElementById('frontDev').value;
 var backEnd = document.getElementById('frontDev').value;
-var backEnd;
-var fullStack;
-var mobileDev;
-var gameDev;
-var dataSci;
-var cyberSecurity;
-var netManage;
-var qAssure;
-var cloud;
-var consult;
-var dataAdmin;
-var imbedSys;
-var research;
-var ux;
+var backEnd = document.getElementById('frontDev').value;
+var fullStack = document.getElementById('frontDev').value;
+var mobileDev = document.getElementById('frontDev').value;
+var gameDev = document.getElementById('frontDev').value;
+var dataSci = document.getElementById('frontDev').value;
+var cyberSecurity = document.getElementById('frontDev').value;
+var netManage = document.getElementById('frontDev').value;
+var qAssure = document.getElementById('frontDev').value;
+var cloud = document.getElementById('frontDev').value;
+var consult = document.getElementById('frontDev').value;
+var dataAdmin = document.getElementById('frontDev').value;
+var imbedSys = document.getElementById('frontDev').value;
+var research = document.getElementById('frontDev').value;
+var ux = document.getElementById('frontDev').value;
 const fields = [frontEnd,backEnd,fullStack,mobileDev,gameDev,dataSci,cyberSecurity,netManage,qAssure,cloud,consult,dataAdmin,imbedSys,research,ux]
 for (let i=0;i<fields.length-1;i++){
     if(fields[i]!=null){
