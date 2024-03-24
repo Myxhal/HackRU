@@ -92,4 +92,3 @@ for(let i=0;i<courses.length-1;i++){
 document.getElementById("course1").value = "4000";
 //arr[0]+", "+arr[18]+", "+arr[20];
 course1.value = arr[19];
-document.getElementById("myInput")

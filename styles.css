@@ -21,7 +21,11 @@ input{
 }
 
 .card{
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+    
+>>>>>>> b02a11708c37c890e37635bc34d22613c1d7a860
     border: 1px solid red;
     
     background-color: white;
@@ -30,7 +34,7 @@ input{
     background-color: rgb(221, 221, 221);
 >>>>>>> Stashed changes
     padding: .5rem;
-    width: ;
+    width: 200px;
 }
 
 .card header{
