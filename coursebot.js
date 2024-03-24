@@ -20,8 +20,6 @@ var courses = csvTo2DArray('courses.csv');
 //fields variables and array implementation
 var frontEnd = document.getElementById('frontDev').value;
 var backEnd = document.getElementById('frontDev').value;
-var backEnd = document.getElementById('frontDev').value;
-var backEnd = document.getElementById('frontDev').value;
 var fullStack = document.getElementById('frontDev').value;
 var mobileDev = document.getElementById('frontDev').value;
 var gameDev = document.getElementById('frontDev').value;
@@ -55,6 +53,6 @@ for(let i=1;i<courses.length-1;i++){
         }
     }
     if(counter>=6){
-        arr.add(courses[i]);
+        arr.push(courses[i]);
     }
 }
