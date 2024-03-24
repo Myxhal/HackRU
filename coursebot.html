@@ -98,7 +98,7 @@
             <br>
             <br>
             
-            <div class="search-wrapper">
+            <div class="search-wrapper" id="question3">
                 <label for="search">Search Class Code</label>
                 <input type="search" id="search" placeholder="Search Class" data-search>
             </div>
@@ -829,6 +829,7 @@
                     <input type="checkbox" id="genChemLab" value="Yes">
                     <div class="body">Gen Chem Lab</div>
                 </button>
+            <button type="button" onclick="showNextQuestion(3)">Next</button>
             </div>
             <br><script>
                 window.addEventListener('DOMContentLoaded', (event) => {
@@ -862,7 +863,7 @@
 
             <br>
 
-            <div class="question">
+            <div class="question" id="question4">
                 <input type="text" id="course1" readonly>
               </div>
               <button onclick="let num = arr[0]+','+arr[18]+','+arr[20];
@@ -882,11 +883,6 @@
                 } else {
                     document.getElementById('finalStep').style.display = 'block';
                 }
-            }
-            
-            function submitQuiz() {
-                alert("Quiz submitted!");
-                // Further logic for quiz submission can be added here
             }
             </script>
           
