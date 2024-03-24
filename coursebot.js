@@ -19,20 +19,20 @@ var courses = csvTo2DArray('courses.csv');
 
 //fields variables and array implementation
 var frontEnd = document.getElementById('frontDev').value;
-var backEnd = document.getElementById('frontDev').value;
-var fullStack = document.getElementById('frontDev').value;
-var mobileDev = document.getElementById('frontDev').value;
-var gameDev = document.getElementById('frontDev').value;
-var dataSci = document.getElementById('frontDev').value;
-var cyberSecurity = document.getElementById('frontDev').value;
-var netManage = document.getElementById('frontDev').value;
-var qAssure = document.getElementById('frontDev').value;
-var cloud = document.getElementById('frontDev').value;
-var consult = document.getElementById('frontDev').value;
-var dataAdmin = document.getElementById('frontDev').value;
-var imbedSys = document.getElementById('frontDev').value;
-var research = document.getElementById('frontDev').value;
-var ux = document.getElementById('frontDev').value;
+var backEnd = document.getElementById('backDev').value;
+var fullStack = document.getElementById('fullStack').value;
+var mobileDev = document.getElementById('mobDev').value;
+var gameDev = document.getElementById('gameDev').value;
+var dataSci = document.getElementById('dataSci').value;
+var cyberSecurity = document.getElementById('cyberSec').value;
+var netManage = document.getElementById('netManag').value;
+var qAssure = document.getElementById('qualAssure').value;
+var cloud = document.getElementById('cloud').value;
+var consult = document.getElementById('consult').value;
+var dataAdmin = document.getElementById('dataAdmin').value;
+var imbedSys = document.getElementById('imbedSys').value;
+var research = document.getElementById('research').value;
+var ux = document.getElementById('ux').value;
 const fields = [frontEnd,backEnd,fullStack,mobileDev,gameDev,dataSci,cyberSecurity,netManage,qAssure,cloud,consult,dataAdmin,imbedSys,research,ux]
 for (let i=0;i<fields.length-1;i++){
     if(fields[i]!=null){
@@ -45,7 +45,7 @@ for (let i=0;i<fields.length-1;i++){
 
 //comparing arrays to get courses list
 var arr = [];
-for(let i=1;i<courses.length-1;i++){
+for(let i=0;i<courses.length-1;i++){
     var counter = 0;
     for(let j=1;j<16;j++){
         if(courses[i][j]==fields[j-1]){
