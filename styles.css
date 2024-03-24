@@ -46,3 +46,10 @@ input{
 .hide{
     display:none;
 }
+
+/* Grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(26, 1fr); /* Creates 26 columns */
+    gap: 10px; /* Adjust space between grid items */
+}
