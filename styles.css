@@ -1,0 +1,15 @@
+.search-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+input{
+    font-size: 1rem;
+}
+
+.user-cards{
+    display: grid;
+    grid-template-columns: repeat(minmax(150px, 160px)) ;
+
+}

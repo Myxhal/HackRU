@@ -30,3 +30,8 @@ FRONTEND
 - put everything into intuitive UI
 
 https://www.youtube.com/watch?v=TlP5WIxVirU
+
+
+
+array- based on the user input 
+making true or false on group jobs 
