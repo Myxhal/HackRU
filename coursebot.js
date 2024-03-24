@@ -49,7 +49,7 @@ for (let i=0;i<fields.length-1;i++){
 var arr = [];
 for(let i=1;i<courses.length-1;i++){
     var counter = 0;
-    for(let j=1;j<16;i++){
+    for(let j=1;j<16;j++){
         if(courses[i][j]==fields[j-1]){
             counter++;
         }
