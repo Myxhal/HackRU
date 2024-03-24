@@ -1,3 +1,4 @@
+//converts csv to 2d array
 const fs = require('fs');
 
 function csvTo2DArray(filePath) {
@@ -16,6 +17,7 @@ function csvTo2DArray(filePath) {
 }
 var courses = csvTo2DArray('courses.csv');
 
+//fields variables and array implementation
 var frontEnd = document.getElementById('frontDev').value;
 var backEnd;
 var fullStack;
