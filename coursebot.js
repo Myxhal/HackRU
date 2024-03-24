@@ -1,6 +1,16 @@
-//converts csv to 2d array
-const fs = require('fs');
 
+
+
+
+const fs = require('fs');
+const searchInput = document.querySelector("[data-search]")
+
+searchInput.addEventListener("input", e =>{
+    const value = e.target.value
+    console.log(value)
+})
+
+//converts csv to 2d array
 function csvTo2DArray(filePath) {
     try {
         // Read the file content
