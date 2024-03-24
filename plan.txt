@@ -28,3 +28,5 @@ list through it the object intiliazer and 2darray (maybe arrayList)
 
 FRONTEND
 - put everything into intuitive UI
+
+https://www.youtube.com/watch?v=TlP5WIxVirU
