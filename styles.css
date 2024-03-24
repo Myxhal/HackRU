@@ -15,14 +15,23 @@ input{
     margin-top: 1rem;
 }
 
+.search-wrapper {
+    display: flex;
+    align-items: center;
+}
+
 .card{
-    border: 1px solid black;
+    border: 1px solid red;
+    
     background-color: white;
     padding: .5rem;
+    width: ;
 }
 
 .card header{
     margin-bottom: .25rem;
+    color: #777;
+
 }
 
 .card body{
